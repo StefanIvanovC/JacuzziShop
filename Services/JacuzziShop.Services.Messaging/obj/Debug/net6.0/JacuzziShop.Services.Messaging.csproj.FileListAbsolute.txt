@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\bin\Debug\net6.0\JacuzziShop.Services.Messaging.deps.json
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\bin\Debug\net6.0\JacuzziShop.Services.Messaging.dll
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\bin\Debug\net6.0\JacuzziShop.Services.Messaging.pdb
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.AssemblyInfo.cs
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.dll
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\refint\JacuzziShop.Services.Messaging.dll
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\JacuzziShop.Services.Messaging.pdb
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services.Messaging\obj\Debug\net6.0\ref\JacuzziShop.Services.Messaging.dll

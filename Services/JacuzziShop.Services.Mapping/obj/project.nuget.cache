@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "COfmc03v9ZWbHwNfI4exaESU0Z8pngD1tcN0fsIrFhPYooigoSVf45c2ScFW6HbpfMTJu0bl+66RFm2DqtiLjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\JacuzziShop\\Services\\JacuzziShop.Services.Mapping\\JacuzziShop.Services.Mapping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

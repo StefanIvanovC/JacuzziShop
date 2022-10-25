@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dGKfodk7HEyT4tmENvjYApNosexSpwJkQqauthaV215XjnO+LsVBKHkkaVfM9h/xfc5zzUW6WoAIwBK6Pnb4tw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\JacuzziShop\\JacuzziShop.Common\\JacuzziShop.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

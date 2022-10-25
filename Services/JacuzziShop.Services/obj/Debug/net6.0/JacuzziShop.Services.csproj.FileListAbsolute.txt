@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\bin\Debug\net6.0\JacuzziShop.Services.deps.json
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\bin\Debug\net6.0\JacuzziShop.Services.dll
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\bin\Debug\net6.0\JacuzziShop.Services.pdb
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.AssemblyInfo.cs
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.dll
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\refint\JacuzziShop.Services.dll
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\JacuzziShop.Services.pdb
+C:\Users\admin\Desktop\JacuzziShop\Services\JacuzziShop.Services\obj\Debug\net6.0\ref\JacuzziShop.Services.dll
