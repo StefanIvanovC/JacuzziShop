@@ -142,6 +142,166 @@ namespace JacuzziShop.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("JacuzziShop.Data.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Extra", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.ToTable("Extras");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Image", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("AddedByUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Extension")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("JacuzziId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddedByUserId");
+
+                    b.HasIndex("ImageId");
+
+                    b.HasIndex("JacuzziId");
+
+                    b.ToTable("Images");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Jacuzzi", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AddedByUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AddedByUserId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.ToTable("Jacuzzis");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.JacuzziExtras", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ExtrasId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("JacuzziId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExtrasId");
+
+                    b.HasIndex("JacuzziId");
+
+                    b.ToTable("JacuzziExtras");
+                });
+
             modelBuilder.Entity("JacuzziShop.Data.Models.Setting", b =>
                 {
                     b.Property<int>("Id")
@@ -281,6 +441,61 @@ namespace JacuzziShop.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("JacuzziShop.Data.Models.Image", b =>
+                {
+                    b.HasOne("JacuzziShop.Data.Models.ApplicationUser", "AddedByUser")
+                        .WithMany()
+                        .HasForeignKey("AddedByUserId");
+
+                    b.HasOne("JacuzziShop.Data.Models.Image", null)
+                        .WithMany("Images")
+                        .HasForeignKey("ImageId");
+
+                    b.HasOne("JacuzziShop.Data.Models.Jacuzzi", "Jacuzzi")
+                        .WithMany()
+                        .HasForeignKey("JacuzziId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("AddedByUser");
+
+                    b.Navigation("Jacuzzi");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Jacuzzi", b =>
+                {
+                    b.HasOne("JacuzziShop.Data.Models.ApplicationUser", "AddedByUser")
+                        .WithMany()
+                        .HasForeignKey("AddedByUserId");
+
+                    b.HasOne("JacuzziShop.Data.Models.Category", "Category")
+                        .WithMany("Jacuzzis")
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("AddedByUser");
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.JacuzziExtras", b =>
+                {
+                    b.HasOne("JacuzziShop.Data.Models.Extra", "Extras")
+                        .WithMany("Jacuzzis")
+                        .HasForeignKey("ExtrasId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("JacuzziShop.Data.Models.Jacuzzi", "Jacuzzi")
+                        .WithMany("Extras")
+                        .HasForeignKey("JacuzziId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Extras");
+
+                    b.Navigation("Jacuzzi");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("JacuzziShop.Data.Models.ApplicationRole", null)
@@ -339,6 +554,26 @@ namespace JacuzziShop.Data.Migrations
                     b.Navigation("Logins");
 
                     b.Navigation("Roles");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Category", b =>
+                {
+                    b.Navigation("Jacuzzis");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Extra", b =>
+                {
+                    b.Navigation("Jacuzzis");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Image", b =>
+                {
+                    b.Navigation("Images");
+                });
+
+            modelBuilder.Entity("JacuzziShop.Data.Models.Jacuzzi", b =>
+                {
+                    b.Navigation("Extras");
                 });
 #pragma warning restore 612, 618
         }

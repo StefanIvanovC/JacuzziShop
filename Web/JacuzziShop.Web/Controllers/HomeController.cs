@@ -1,16 +1,31 @@
 ﻿namespace JacuzziShop.Web.Controllers
 {
     using System.Diagnostics;
-
+    using System.Linq;
+    using JacuzziShop.Data;
     using JacuzziShop.Web.ViewModels;
-
+    using JacuzziShop.Web.ViewModels.Home;
     using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : BaseController
     {
+        private ApplicationDbContext db;
+
+        public HomeController(ApplicationDbContext db)
+        {
+            this.db = db;
+        }
+
         public IActionResult Index()
         {
-            return this.View();
+            // Direct use of Database Variant by injecting ApplicationDbContex in the constructor
+            var viewModel = new IndexViewModel
+            {
+                ExtrasCount = this.db.Extras.Count(),
+                JacuzzisCount = this.db.Jacuzzis.Count(),
+            };
+
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()
