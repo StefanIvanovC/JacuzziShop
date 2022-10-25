@@ -25,6 +25,8 @@
 
         public virtual ICollection<JacuzziExtras> Extras { get; set; }
 
+        public int CategoryId { get; set; }
+
         public virtual Category Category { get; set; }
     }
 }

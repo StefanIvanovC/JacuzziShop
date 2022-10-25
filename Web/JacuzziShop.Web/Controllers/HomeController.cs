@@ -18,7 +18,7 @@
 
         public IActionResult Index()
         {
-            // Direct use of Database Variant by injecting ApplicationDbContex in the constructor
+            // Direct use of Database variant by injecting ApplicationDbContex in the constructor just for practice
             var viewModel = new IndexViewModel
             {
                 ExtrasCount = this.db.Extras.Count(),
