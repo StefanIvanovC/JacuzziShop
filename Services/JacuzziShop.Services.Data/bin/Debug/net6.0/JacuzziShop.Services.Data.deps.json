@@ -11,6 +11,7 @@
           "JacuzziShop.Data.Common": "1.0.0",
           "JacuzziShop.Data.Models": "1.0.0",
           "JacuzziShop.Services.Mapping": "1.0.0",
+          "JacuzziShop.Web.ViewModels": "1.0.0",
           "StyleCop.Analyzers": "1.2.0-beta.435"
         },
         "runtime": {
@@ -269,6 +270,15 @@
         "runtime": {
           "JacuzziShop.Services.Mapping.dll": {}
         }
+      },
+      "JacuzziShop.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "JacuzziShop.Data.Models": "1.0.0",
+          "JacuzziShop.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "JacuzziShop.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -471,6 +481,11 @@
       "sha512": ""
     },
     "JacuzziShop.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JacuzziShop.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

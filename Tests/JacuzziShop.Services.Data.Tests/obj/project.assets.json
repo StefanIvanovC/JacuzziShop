@@ -2877,7 +2877,8 @@
         "dependencies": {
           "JacuzziShop.Data.Common": "1.0.0",
           "JacuzziShop.Data.Models": "1.0.0",
-          "JacuzziShop.Services.Mapping": "1.0.0"
+          "JacuzziShop.Services.Mapping": "1.0.0",
+          "JacuzziShop.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/JacuzziShop.Services.Data.dll": {}
@@ -2897,6 +2898,20 @@
         },
         "runtime": {
           "bin/placeholder/JacuzziShop.Services.Mapping.dll": {}
+        }
+      },
+      "JacuzziShop.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "JacuzziShop.Data.Models": "1.0.0",
+          "JacuzziShop.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/JacuzziShop.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JacuzziShop.Web.ViewModels.dll": {}
         }
       }
     }
@@ -8780,6 +8795,11 @@
       "type": "project",
       "path": "../../Services/JacuzziShop.Services.Mapping/JacuzziShop.Services.Mapping.csproj",
       "msbuildProject": "../../Services/JacuzziShop.Services.Mapping/JacuzziShop.Services.Mapping.csproj"
+    },
+    "JacuzziShop.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/JacuzziShop.Web.ViewModels/JacuzziShop.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/JacuzziShop.Web.ViewModels/JacuzziShop.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\JacuzziShop.Data.Common\JacuzziShop.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\JacuzziShop.Data.Models\JacuzziShop.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\JacuzziShop.Web.ViewModels\JacuzziShop.Web.ViewModels.csproj" />
     <ProjectReference Include="..\JacuzziShop.Services.Mapping\JacuzziShop.Services.Mapping.csproj" />
   </ItemGroup>
 

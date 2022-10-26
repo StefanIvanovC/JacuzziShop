@@ -1,9 +1,10 @@
-﻿using JacuzziShop.Data.Models;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace JacuzziShop.Web.ViewModels.Jacuzzis
+﻿namespace JacuzziShop.Web.ViewModels.Jacuzzis
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    using JacuzziShop.Data.Models;
+
     public class CreateJacuzziInputModel
     {
         [Required]

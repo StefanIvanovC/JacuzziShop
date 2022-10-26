@@ -2,6 +2,7 @@
 {
     using System.Diagnostics;
     using System.Linq;
+
     using JacuzziShop.Data;
     using JacuzziShop.Web.ViewModels;
     using JacuzziShop.Web.ViewModels.Home;

@@ -29,6 +29,7 @@
                               new SettingsSeeder(),
                               new CategoriesSeeder(),
                               new ExtrasSeeder(),
+                              new QuestionsSeeder(),
                           };
 
             foreach (var seeder in seeders)

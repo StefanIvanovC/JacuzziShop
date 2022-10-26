@@ -3960,7 +3960,8 @@
         "dependencies": {
           "JacuzziShop.Data.Common": "1.0.0",
           "JacuzziShop.Data.Models": "1.0.0",
-          "JacuzziShop.Services.Mapping": "1.0.0"
+          "JacuzziShop.Services.Mapping": "1.0.0",
+          "JacuzziShop.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/JacuzziShop.Services.Data.dll": {}
